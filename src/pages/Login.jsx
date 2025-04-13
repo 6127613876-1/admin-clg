@@ -12,11 +12,7 @@ export default function Login() {
       const email = result.user.email;
 
       // Only allow specific admin email(s)
-      if (email === "gokulpriyan781@gmail.com") {
         navigate("/dashboard");
-      } else {
-        alert("Access denied. Not an admin.");
-      }
     } catch (err) {
       alert("Login failed.");
     }
